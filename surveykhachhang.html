@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Survey khách hàng</title>
+    <style>table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+    tr:nth-child(odd) {
+    background-color: #dddddd;</style>
 </head>
 <h2> Market Research Survey</h2><br>
 Please take a few moments to complete this satisfaction survey<br>
@@ -29,11 +36,54 @@ Please take a few moments to complete this satisfaction survey<br>
         <input type="checkbox" value="product3" name="product">Product 3<br>
         <br>
         <strong>How often would you use our new product ?</strong><br>
+        <input type="radio" value="date" name="date">Daily<br>
+        <input type="radio" value="date" name="date">Weekly<br>
+        <input type="radio" value="date" name="date">Monthly<br>
+        <br>
+        <strong>What would you pay product?</strong><br>
+        $<input type="text" name="money" size="10">.
+         <input type="text" name="money" size="1"><br>
+         Dollars Cents<br><br>
+        <strong>What feartures would you like to see in the new product. </strong><br>
+
+
         <textarea cols="50" rows="4"></textarea>
         <br>
         <br>
         Please rate your level of agreement with the folowing statement.<br>
 
+        <table border="1">
+            <tr>
+
+            <th></th>
+                <th>Strong Disagree </th>
+            <th>Disgaree</th>
+            <th>Agree</th>
+            <th>Strongly Agree</th
+            </tr>
+            <tr>
+                <td><strong>Our product are priced fairly.</strong></td>
+                <td><input type="radio" value="1" name="point">1</td>
+                <td><input type="radio" value="2" name="point">2</td>
+                <td><input type="radio" value="3" name="point">3</td>
+                <td><input type="radio" value="4" name="point">4</td>
+            </tr>
+            <tr>
+                <td><strong>Our product are high quality.</strong></td>
+                <td><input type="radio" value="1" name="point">1</td>
+                <td><input type="radio" value="2" name="point">2</td>
+                <td><input type="radio" value="3" name="point">3</td>
+                <td><input type="radio" value="4" name="point">4</td>
+            </tr>
+            <tr>
+                <td><strong>You would recommend our product to a friend or coworker</strong></td>
+                <td><input type="radio" value="1" name="point">1</td>
+                <td><input type="radio" value="2" name="point">2</td>
+                <td><input type="radio" value="3" name="point">3</td>
+                <td><input type="radio" value="4" name="point">4</td>
+            </tr>
+    </table>
+    <input type="submit" value="Submit">
 
 
 
